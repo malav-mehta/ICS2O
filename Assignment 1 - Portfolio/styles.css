@@ -1,0 +1,389 @@
+/* the side navigation bar style */
+/* rgba tags are used throughout to change the opacity within the color parameter */
+.sideNav {
+	height: 100%;
+	width: 325px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.4);
+	overflow-x: hidden;
+	padding-top: 20px;
+  transition: all 0.5s; /* transitions are set throughout so that when background color or any other changes occur when the user hovers over any elements are smooth */
+}
+
+.sideNav:hover {
+    background-color: rgba(255, 255, 255, 0.3); /*throughout, changes in background color have been made to inverse the theme of elements on user hover*/
+    /*border: rgba(0, 0, 0, 0.2) 2px solid;*/
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.sideNav:hover a{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.sideNav a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+}
+
+.sideNav a:hover {
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: none;
+}
+
+.navElements {
+	font-family: tahoma;
+	font-size: 25px;
+	line-height: 6.5;
+	margin-top: 25%;
+	margin-bottom: 25%;
+	text-align: center;
+}
+
+/* the main body styles */
+.main {
+	margin-left: 325px;
+}
+
+/* different images for the different html pages */
+.bodyHome {
+	background-image: url("images/index_background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.bodyProjects {
+	background-image: url("images/projects_background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.bodyResume {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url("images/resume_background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bodyAbout {
+    background-image: url("images/about_me_background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* body text styles */
+
+.title { /*The top header styling*/
+	display: table-cell;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 20px;
+	width: 800px;
+	height: 50px;
+	padding: 10px;
+    transition: all 0.5s;
+	text-decoration: none;
+}
+
+.noUnderline {
+	text-decoration: none;
+}
+
+.noUnderline a, a:visited{
+	text-decoration: none;
+}
+
+.title:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    /*border: rgba(0, 0, 0, 0.4) 10px solid;*/
+}
+.title h1{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.title:hover h1{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.title h2{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.title:hover h2{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.mainTitle { /*Home page header style*/
+	display: table-cell;
+    color: rgba(255, 255, 255, 0.8);
+	width: 600px;
+	height: 250px;
+	padding: 10px;
+	vertical-align: middle;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 20px;
+	position: relative;
+	top: 50%;
+	transform: translateY(+110%);
+    transition: all 1s;
+}
+
+.mainTitle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.mainTitle h1 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.mainTitle h2 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.mainTitle:hover h2 {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.mainTitle:hover h1,h2 {
+    color: rgba(0, 0, 0, 0.4);
+}
+/* styling the headers and paragraphs together, then individual modifications to the styles */
+h1, h2, h3, h4, h5, p {
+    font-family: tahoma;
+    font-weight: regular;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+p {
+    font-size: 15px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+form, input {
+    font-family: tahoma;
+	font-size: 15px;
+	color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 13px;
+    border: none;
+    padding: 4px;
+    width: 300px;
+}
+
+select {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 13px;
+    border: none;
+    padding: 4px;
+    width: 300px;
+}
+
+textarea {
+    display: inline-block;
+    vertical-align: middle;
+	word-wrap: hard;
+	background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 13px;
+    border: none;
+    padding: 4px;
+    width: 300px;
+	font-family: tahoma;
+	font-size: 13px;
+	resize: none;
+}
+
+input[type=submit], input[type=reset] {
+    width: 75px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px rgba(255, 255, 255, 0.8) solid;
+    padding: 2px;
+}
+
+.p1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 10px;
+	transition: all 1s;
+}
+
+/* sub header styling for each page (contained in a table)*/
+/* changing the diplay parameter to a table cell permits different style modification paramaters*/
+.tableHeaderStyle {
+	display: table-cell;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	padding-top: 18px;
+	line-height: 1;
+    transition: all 0.5s;
+}
+
+.tableHeaderStyle:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    /*border: rgba(0, 0, 0, 0.2) 10px solid;*/
+}
+
+.tableHeaderStyle h2{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.tableHeaderStyle:hover h2{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.tableStyle {
+	display: table-cell;
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	padding: 18px;
+    width: 790px;
+    font-family: tahoma;
+    font-size: 15px;
+    font-weight: regular;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 1s;
+	/* line-height: 1; */
+}
+
+.tableStyle:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    /*border: rgba(0, 0, 0, 0.5) 10px solid;*/
+}
+
+.tableStyle p{
+    color: rgba(255, 255, 255, 0.8);
+/*    text-decoration: underline;
+    font-weight: 900; */
+}
+
+.tableStyle:hover p{
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration-color: rgba(0, 0, 0, 0.4);
+}
+
+.tableStyle h3{
+    color: rgba(255, 255, 255, 0.8);
+/*    text-decoration: underline;
+    font-weight: 900; */
+}
+
+.tableStyle:hover h3{
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration-color: rgba(0, 0, 0, 0.4);
+}
+
+.tableStyle:hover .p1{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+/* text and link styles for the tables */
+
+.tableText {
+	font-family: tahoma;
+	font-size: 15px;
+	color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	line-height: 2;
+}
+
+.tableStyle:hover a{
+	color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+	line-height: 3;
+}
+
+.tableStyle:hover a:hover {
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: none;
+	line-height: 3;
+}
+
+.tableStyle a{
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	line-height: 3;
+}
+
+.tableStyle a:hover {
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: none;
+	line-height: 3;
+}
+
+.tableStyle:hover input {
+	background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.tableStyle:hover textarea {
+	background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.tableStyle:hover select {
+	background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+}
+/*
+.tableStyle:hover ul {
+	list-style-type: none;
+}
+
+.tableStyle:hover li {
+	padding-left: 1em;
+	text-indent: -.7em;
+}
+
+.tableStyle:hover li::before {
+	content: "\2022";
+	color: rgba(0, 0, 0, 0.8);
+
+}
+*/
+.tableImage {
+    background-size: 200px 100%;
+}
+
+.tab {
+    display: inline-block;
+    width: 3ch;
+}

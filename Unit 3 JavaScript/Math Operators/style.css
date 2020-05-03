@@ -1,0 +1,65 @@
+body {
+  background-image: url("assets/images/javascript.jpg");
+  color: white;
+  font-family: Verdana;
+  padding: 10px;
+  background-repeat: no repeat;
+}
+
+.layer {
+  /*display: table-cell;*/
+  background-color: #00000095;
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.layer1 {
+  /*display: table-cell;*/
+  background-color: #00000095;
+  width: 40%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  padding: 5px;
+  background-color: white;
+  color: #00000095;
+  border-radius: 12px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 200;
+  color: green;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 200;
+  color: red;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 700;
+}

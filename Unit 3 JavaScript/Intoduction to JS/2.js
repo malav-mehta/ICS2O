@@ -1,0 +1,1 @@
+document.write('Why fit in when<br><b>"YOU"</b><br>were born to<br><h1>STAND OUT</h1><hr>');

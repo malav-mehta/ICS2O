@@ -1,0 +1,166 @@
+body {
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	z-index: 2;
+	color: rgba(255, 255, 255, 0.7);
+	font-family: tahoma;
+	transition: 1s all;
+	text-decoration: none;
+}
+
+.main {
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: 100% 100%;
+	z-index: 1;
+}
+
+.div1 {
+	background-color: rgba(0, 0, 0, 0.35);
+	border-radius: 20px;
+	width: 85%;
+	padding: 5px;
+	transition: 1s all;
+}
+
+.div2 {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	width: 85%;
+	padding: 5px;
+	transition: 1s all;
+}
+
+button {
+	color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(255, 255, 255, 0.4);
+	font-family: tahoma;
+	border: none;
+	border-radius: 10px;
+	padding: 8px;
+	transition: 1a all;
+}
+
+a {
+	color: rgba(255, 255, 255, 0.7);
+	text-decoration: none;
+	transition: 1s all;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 14px;
+	font-weight: 900;
+	color: green;
+  }
+  
+h5 {
+	font-size: 14px;
+	font-weight: 900;
+	color: red;
+  }
+
+table {
+	padding: 10;
+}
+
+.div1:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.div1:hover h1 {
+	color: rgba(0, 0, 0, 0.8);
+}
+.div1:hover h2 {
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.div1:hover h3 {
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.div1:hover p {
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.div1:hover a {
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.div1:hover button {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: rgba(255, 255, 255, 0.7);
+}
+
+a:hover {
+	text-decoration: underline;
+	font-weight: 800;
+	color: rgba(0, 0, 0, 0.2);
+	transition: 1s all;
+}
+
+.ball {
+	display: table-cell;
+	background-color: black;
+	border-radius: 50%;
+	border: none;
+	width: 600px;
+	height: 600px;
+	vertical-align: center;
+	transition: 0.1s all;
+}
+
+.arrow-down {
+	transform: translateY(+75%);
+	width: 0;
+	height: 0;
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-top: 250px solid #003366;
+	text-align: center;
+	vertical-align: center;
+}
+
+#id02 {
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+	width: 200px;
+}
+
+input {
+	color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(255, 255, 255, 0.4);
+	font-family: tahoma;
+	border: none;
+	border-radius: 10px;
+	padding: 8px;
+	transition: 1a all;
+	width: 60%;
+}
+
+.div1:hover input {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: rgba(255, 255, 255, 0.7);
+}
+
+::placeholder {
+	color: rgba(0, 0, 0, 0.5);
+	font-family: tahoma;
+	transition: 1s all;
+	text-decoration: none;
+}
+
+.div1:hover ::placeholder {
+	color: rgba(255, 255, 255, 0.7);
+}

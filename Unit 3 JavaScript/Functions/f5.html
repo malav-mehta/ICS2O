@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<title>JavaScript Functions 5</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+		<center>
+			<div class="div1" style="width:70%; padding:10px;">
+				<h1>Assignment n5</h1>
+			</div>
+			
+			<div>
+				<br>
+				<br>
+			</div>
+			
+			
+			<div class="div1">
+				<h3>Click <a href="index.html">here</a> to return to the <a href="index.html">home</a> page.<br><br>Welcome to an <b>about you</b> survey!</h3>
+			</div>
+			
+			<div>
+				<br>
+				<br>
+			</div>
+			
+			
+			<div class="div1">
+				<p>Click submit at the end to recieve your results...</p>
+				<center>
+                    <form>
+                        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name here..."/>
+                        <br><br><br><br>
+
+                        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name here..."/>
+                        <br><br><br><br>
+
+                        <input type="text" width="auto" id="rangeOut" value="" placeholder="Enter your age here..."/><br><br>   
+                        <input type="range" id="age" name="age" min="1" max="100" value="15" class="slider"/>
+                        <br><br><br>
+
+                        <div><hr><br><br></div>
+
+                        <input type="date" id="birthday">
+                        <br><br>
+
+                        <select name="grade" id="grade">
+                            <option value="default">What grade are you in?  </option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="teacher">Teacher</option>
+                        </select>
+                        <br><br>
+                        <div style="width:50px; text-align: center;">
+                            <label class="container"><p>Male</p>
+                                <input type="radio" id="gender" checked="checked" name="radio" value="male">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container"><p>Female</p>
+                                <input type="radio" id="gender" name="radio" value="female">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container"><p>Other</p>
+                                <input type="radio" id="gender" name="radio" value="other">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <br><br>
+
+                        <div><hr><br><br></div>
+
+                        <input type="text" width="auto" id="distanceOut" value="" placeholder="How far do you live from Colonel By? (km)"/><br><br>   
+                        <input type="range" id="distance" name="distance" min="1" max="50" value="2" class="slider"/>
+                        <br><br><br><br>
+
+                        <input type="text" id="class" name="class" placeholder="What is your favorite class at school?"/>
+                        <br><br><br><br>
+
+                        <input type="text" width="auto" id="ratingOut" value="" placeholder="Rate this survey (out of 10, 10 being the best)"/><br><br>   
+                        <input type="range" id="rating" name="rating" min="0" max="10" value="10" class="slider"/>
+                        <br><br><br><br>
+
+                        <input class="birth" type="reset" value="Reset"/>
+                    </form>
+
+                    <button onclick="parseInput()" class="birth" noshade>Submit</button> 
+				</center>
+				<br>
+				<b><p id="id01">The output will appear here.</p></b>
+				<script type="text/javascript" src="f5.js"></script>
+            </div>
+            
+            <div>
+                <br>
+                <br>
+            </div>
+		</center>
+	</body>
+</html>

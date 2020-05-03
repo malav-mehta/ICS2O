@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>JavaScript Functions 4</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <center>
+            <br>
+            <div class="div1" style="width:70%; padding:10px;">
+                <h1>JS String Assignment</h1>
+            </div>
+
+            <div>
+                <br>
+                <br>
+            </div>
+
+            <div>
+                <br>
+                <br>
+            </div>
+
+
+            <div class="div1">
+                <p>
+                    Try inputting different words and substrings (shorter words/letters) into the input fields below.
+                    Next, click enter to recieve output based on the words you entered. Try figuring out how the output
+                    version differs from the input!
+                </p>
+                <center>
+                    <table width="200vw">
+                        <tr>
+                            <td align="center"><h3>Exercise</h3></td>
+                            <td align="center"><h3>Input</h3></td>
+                            <td align="center"><h3>Substring</h3></td>
+                            <td align="center"><h3>Submit</h3></td>
+                            <td align="center"><h3>Output</h3></td>
+                        </tr>
+
+                        <tr>
+                            <td align="center" valign="middle"><p><b>#1</b></p></td>
+                            <td align="center" valign="middle"><p><form><input type="text" id="in1" placeholder="Enter a word here..." style="width: 25vw;"></form></p></td>
+                            <td align="center" valign="middle"></td>
+                            <td align="center" valign="middle"><button onclick="func1()" noshade>Submit</button></td>
+                            <td align="center" valign="middle"><p id="out1" style="width: 18vw"></p></td>
+                        </tr>
+
+                        <tr>
+                            <td align="center" valign="middle"><p><b>#2</b></p></td>
+                            <td align="center" valign="middle"><p><form><input type="text" id="in2" placeholder="Enter a word here..." style="width: 25vw;"></form></p></td>
+                            <td align="center" valign="middle"><p><form><input type="text" id="sb2" placeholder="Enter a letter here..." style="width: 10vw;"></form></p></td>
+                            <td align="center" valign="middle"><button onclick="func2()" noshade>Submit</button></td>
+                            <td align="center" valign="middle"><p id="out2" style="width: 18vw"></p></td>
+                        </tr>
+
+                        <tr>
+                            <td align="center" valign="middle"><p><b>#3</b></p></td>
+                            <td align="center" valign="middle"><p><form><input type="text" id="in3" placeholder="Enter a word here..." style="width: 25vw;"></form></p></td>
+                            <td align="center" valign="middle"><p><form><input type="text" id="sb3" placeholder="Enter a shorter word/letter here..." style="width: 10vw;"></form></p></td>
+                            <td align="center" valign="middle"><button onclick="func3()" noshade>Submit</button></td>
+                            <td align="center" valign="middle"><p id="out3" style="width: 18vw"></p></td>
+                        </tr>
+
+                        <tr>
+                            <td align="center" valign="middle"><p><b>#4</b></p></td>
+                            <td align="center" valign="middle">
+                                <p><form>
+                                    <input type="text" id="in4" placeholder="Enter a string here..." style="width: 25vw;"><br>
+                                    <input type="text" id="in5" placeholder="Enter a second string here..." style="width: 25vw;"><br>
+                                    <input type="text" id="in6" placeholder="Enter a third string here..." style="width: 25vw;">
+                                </form></p>
+                            </td>
+                            <td align="center" valign="middle"></td>
+                            <td align="center" valign="middle"><button onclick="func4()" noshade>Submit</button></td>
+                            <td align="center" valign="middle"><p id="out4" style="width: 18vw"></p></td>
+                        </tr>
+                    </table>
+                </center>
+                <br>
+                <script type="text/javascript" src="script.js"></script>
+            </div>
+        </center>
+    </body>
+</html>

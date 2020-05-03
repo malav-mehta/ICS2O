@@ -1,0 +1,136 @@
+ <html>
+	<head>
+		<title>Jackson Electronics Registration Form</title>
+		
+		<style>
+			body {
+				background-color: yellow;
+			}
+			
+			h2{
+				text-align: center;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<form>
+			<h2>Registration Form</h2>
+			<p style="text-align: center;">Register your Jackson Electronics product here.</p>
+			
+			<table cellpadding="2">
+				<tr>
+					<td width="200">First Name:</td>
+					<td><input type="text" name="firstname"</td>
+				</tr>
+				
+				<tr>
+					<td width="200">Last Name:</td>
+					<td><input type="text" name="lastname"</td>
+				</tr>
+				
+				<tr>
+					<td width="200">Address:</td>
+					<td><input type="text" name="address"</td>
+				</tr>
+				
+				<tr>
+					<td width="200">City:</td>
+					<td><input type="text" name="city" size="25"</td>
+				</tr>
+				
+				<tr>
+					<td width="200">State/Province:</td>
+					<td><input type="text" name="state_province" size="25"</td>
+				</tr>
+				
+				<tr>
+					<td width="200">Zip:</td>
+					<td><input type="text" name="zip" size="30"</td>
+				</tr>
+				
+				<tr>
+					<td width="200">Country:</td>
+					<td><input type="text" name="country" value="Canada" size="25"</td>
+				</tr>
+			</table>
+			
+			<table>
+				<hr>
+				<tr>
+					<td width="200">Product:</td>
+					<td>
+						<select name="product" style="width:178;">
+							<option value="scanmaster">Scanmaster</option>
+							<option value="scanmaster">Copymaster</option>
+							<option value="scanmaster">PDFmaster</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td width="200">Date Purchased:</td>
+					<td><input type="text" name="dateOfPurchase" size="25"</td>
+				</tr>
+				
+				<tr>
+					<td width="200">Serial #:</td>
+					<td><input type="text" name="serialNumber" size="25"</td>
+				</tr>
+				
+				<tr>
+					<td valign="top">Used For:</td>
+					<td width="46">
+						<input type="radio" name="usedfor" value="home">Home</input> <br>
+						<input type="radio" name="usedfor" value="business">Business</input> <br>
+						<input type="radio" name="usedfor" value="government">Government</input>
+					</td>
+					<td valign="top">
+						<input type="radio" name="usedfor" value="educational">Educational</input> <br>
+						<input type="radio" name="usedfor" value="other">Other</input>
+					</td>
+				</tr>
+				
+				<tr>
+					<td valign="top">System (check all that apply)</td>
+					<td valign="top">
+						<input type="checkbox" name="system" value="Windows">Windows</input> <br>
+						<input type="checkbox" name="system" value="Macinstosh"> Macintosh</input>						
+					</td>
+					<td>
+						<input type="checkbox" name="system" value="Unix">Unix</input> <br>
+						<input type="checkbox" name="system" value="Linux">Linux</input> <br>	
+						<input type="checkbox" name="system" value="Other">Other</input>
+					</td>
+				</tr>
+			</table>
+		
+			<table>
+				<hr>
+				<tr>
+					<td width="200" valign="top">Comments?:</td>
+					<td><input input="textarea" size="55" style="height:90px;" valign="top" value=></input></td>
+				</tr>
+				
+				<tr>
+					<td width="200">Add me to the mailing list?</td>
+					<td>
+						<input type="radio" name="mailingListValue" value="yes">Yes</input>
+						<input type="radio" name="mailingListValue" value="no">No</input>
+					</td>
+				</tr>
+				
+				<tr>
+					<td width="200">E-mail Address</td>
+					<td><input type="text" size="30"></input></td>
+				</tr>
+			</table>
+			
+			<center>
+				<input type="submit" value="Click To Register"></input>
+				<input type="reset" value="Click To Cancel"></input>
+			</center>
+		</form>
+	</body>
+
+</html>

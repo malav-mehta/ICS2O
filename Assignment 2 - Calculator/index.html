@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>JS Calculator Assigment</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    </head>
+
+    <body>
+        <div class="mainHeader">
+            <div class="header">
+                <table>
+                    <tr>
+                        <td width="86%"></td>
+                        <td><button style="width: auto; border: none;">Malav Mehta</button></td>
+                        <td><button style="width: auto; border: none;">ICS 2O</button></td>
+                    </tr>
+                </table>
+            </div>
+            <h1>Calculator Application (JavaScript Assignment)</h1>
+        </div>
+
+        <br><br>
+
+        <center>
+            <div class="calcDiv">
+            <center>
+                <br><br>
+                <table class="calcMid">
+                    <tr>
+                        <td align="center" colspan="9"><form><input id="input" name="input" placeholder="Enter values here...  " value=""/></form></td>
+                    </tr>
+
+                    <tr><td><p><br></p></td></tr>
+    
+                    <tr>
+                        <td align="center" colspan="2"><button id="angleStat" class="wide">RAD</button></td>
+                        <td align="center"><button id="" onclick="mFunction(0)" class="opMinor">M+</button></td>
+                        <td align="center"><button id="" onclick="mFunction(1)" class="opMinor">M-</button></td>
+                        <td align="center"><button id="mrBtn" onclick="mFunction(2)" class="opMinor">MR</button></td>
+                        <td align="center"><button id="" onclick="clearValue()" class="opSpecial2">C</button></td>
+                        <td align="center"><button id="" onclick="changeSign()" class="opSpecial2">(-/+)</button></td>
+                        <td align="center"><button id="" onclick="backSpace()" class="opSpecial2">←</button></td>
+                        <td align="center"><button id="" onclick="addValue(' / ')" class="opMajor">/</button></td>
+                    </tr>
+                    
+                    <tr><td><p><br></p></td></tr>
+
+                    <tr>
+                        <td align="center"><button id="" onclick="tenPower()" class="op">10ˣ</button></td>
+                        <td align="center"><button id="" onclick="reciprocalValue()" class="op">1/x</button></td>
+                        <td align="center"><button id="prBtn" onclick="addValue(`(`)" class="op">(</button></td>
+                        <td align="center"><button id="sqrBtn" onclick="exponentValue(2)" class="op">x²</button></td>
+                        <td align="center"><button id="sqrtBtn" onclick="rootValue()" class="op">√x</button></td>
+                        <td align="center"><button id="" onclick="addValue('7')">7</button></td>
+                        <td align="center"><button id="" onclick="addValue('8')">8</button></td>
+                        <td align="center"><button id="" onclick="addValue('9')">9</button></td>
+                        <td align="center"><button id="" onclick="addValue(' * ')" class="opMajor">*</button></td>
+                    <tr>
+    
+                    <tr><td><p><br></p></td></tr>
+
+                    <tr>
+                        <td align="center" colspan="2"><button class="wide" id="changeBtn" onclick="changeType()">DGR</button></td>
+                        <td align="center"><button id="" onclick="sinF()" class="op">sin</button></td>
+                        <td align="center"><button id="" onclick="cosF()" class="op">cos</button></td>
+                        <td align="center"><button id="" onclick="tanF()" class="op">tan</button></td>
+                        <td align="center"><button id="" onclick="addValue('4')">4</button></td>
+                        <td align="center"><button id="" onclick="addValue('5')">5</button></td>
+                        <td align="center"><button id="" onclick="addValue('6')">6</button></td>
+                        <td align="center"><button id="" onclick="addValue(' - ')" class="opMajor">-</button></td>
+                    </tr>
+    
+                    <tr><td><p><br></p></td></tr>
+    
+                    <tr>
+                        <td align="center" colspan="2"><button class="wide" onclick="randomNumb()">Rand</button></td>
+                        <td align="center"><button id="" onclick="sinHF()" class="op">asin</button></td>
+                        <td align="center"><button id="" onclick="cosHF()" class="op">acos</button></td>
+                        <td align="center"><button id="" onclick="tanHF()" class="op">atan</button></td>
+                        <td align="center"><button id="" onclick="addValue('1')">1</button></td>
+                        <td align="center"><button id="" onclick="addValue('2')">2</button></td>
+                        <td align="center"><button id="" onclick="addValue('3')">3</button></td>
+                        <td align="center"><button id="" onclick="addValue(' + ')"" class="opMajor">+</button></td>
+                    </tr>
+    
+                    <tr><td><p><br></p></td></tr>
+    
+                    <tr>
+                        <td align="center" colspan="2"><button id="fnBtn" onclick="secondFunction()" class="wide">2nd</button></td>
+                        <td align="center"><button id="" onclick="addValue(` ${Math.E} `)" class="op">e</button></td>
+                        <td align="center"><button id="" onclick="addValue(` ${Math.PI} `)" class="op">π</button></td>
+                        <td align="center"><button id="pcBtn" onclick="percentFunction()" class="opSpecial2">%</button></td>
+                        <td align="center"><button id="" onclick="addValue('0')">0</button></td>
+                        <td align="center"><button id="" onclick="addValue('.')" class="opSpecial2">.</button></td>
+                        <td align="center" valign="middle" colspan="5"><button id="calculate" onclick="evaluateValue()" class="wide2">=</button></td>
+                    </tr>
+    
+                </table>
+            </center>
+        </div>
+        </center>
+        <script src="calculator.js"></script>
+    </body>
+</html>
